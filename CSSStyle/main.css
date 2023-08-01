@@ -32,3 +32,24 @@ body {
     font-weight: 400;
     margin-top: -35px;
 }
+
+.main-wrapper .Search {
+    display: flex;
+    justify-content: center;
+}
+
+.Search #Search_Input {
+    width: 600px;
+    background-color: gainsboro;
+    color: black;
+    font-size: var(--medium);
+    padding: 15px 0px;
+    border-radius: 30px;
+    border: 0px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.Search #Search_Input::placeholder{
+    font-size: var(--medium);
+}
