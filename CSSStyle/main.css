@@ -16,10 +16,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
 
 .main-container .main-wrapper {
     text-align: center;
+    position: fixed;
 }
 
 .main-container .date {
@@ -52,4 +54,50 @@ body {
 
 .Search #Search_Input::placeholder{
     font-size: var(--medium);
+}
+
+.Bookmark_open {
+    width: 240px;
+    padding : 15px 30px;
+    font-size: var(--xsmall);
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.Bookmark_close {
+    width: 240px;
+    padding : 15px 30px;
+    font-size: var(--xsmall);
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.Bookmark_close div {
+    cursor: pointer;
+}
+
+.Bookmark_open div {
+    cursor: pointer;
+}
+
+.Bookmark_bar {
+    width: 240px;
+    position: absolute;
+    top: 50px; right: 0px;
+    min-height: calc(100vh - 70px);
+    padding: 10px 30px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
 }
