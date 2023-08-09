@@ -28,4 +28,4 @@ const BookmarkBarToggle = () => {
 }
 
 document.getElementById("Bookmark_open_btn").addEventListener("click", BookmarkBarToggle);
-document.getElementById("Bookmark_close_btn").addEventListener("click", BookmarkBarToggle);
+document.getElementById("Bookmark_close_btn").addEventListener("click", Boo);
