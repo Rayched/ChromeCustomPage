@@ -5,6 +5,32 @@ const BookmarkClose = document.getElementById("Bookmark_close");
 const BookmarkBarToggle = () => {
     const isBookmarkBarOpen = localStorage.getItem("isBookmarkBarOpen")
     
+    //기존 if, else 조건문으로 가득했던 코드에서
+    //가독성 향상을 위해 early return 패턴을 적용
+    //혹시 모르니 수정 전 것도 주석으로 남겨둔다.
+    /*
+    * Before (Early Return 적용 전)
+    if(isBookmarkBarOpen){
+        if(isBookmarkBarOpen==="open"){
+            localStorage.setItem("isBookmarkBarOpen", "close");
+            BookmarkBar.style.display = "none";
+            BookmarkOpen.style.display = "none";
+            BookmarkClose.style.display = "flex";
+        }
+        else {
+            localStorage.setItem("isBookmarkBarOpen", "open");
+            BookmarkBar.style.display="block";
+            BookmarkOpen.style.display="flex";
+            BookmarkClose.style.display="none";
+        }
+    }
+    else {
+        localStorage.setItem("isBookmarkBarOpen", "close");
+        BookmarkBar.style.display = "none";
+        BookmarkOpen.style.display = "none";
+        BookmarkClose.style.display = "flex";
+    }
+    */
    
     if(isBookmarkBarOpen==="close"){
         localStorage.setItem("isBookmarkBarOpen", "open");
