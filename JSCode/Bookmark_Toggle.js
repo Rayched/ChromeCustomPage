@@ -2,6 +2,23 @@ const BookmarkBar = document.getElementById("Bookmark_bar");
 const BookmarkOpen = document.getElementById("Bookmark_open");
 const BookmarkClose = document.getElementById("Bookmark_close");
 
+//웹 페이지에 접속했을 때
+//localstorage의 isBookmarkBar의 변수가 close이면 북마크 바를 닫힌 상태로 유지하고
+//open이면 북마크 바를 열어놓은 상태로 유지하는 logic 추가
+const isBookmarkBarOpen = localStorage.getItem("isBookmarkBarOpen");
+if (isBookmarkBarOpen === "close"){
+    //isBookmarkBarOpen 변수의 값이 "close"라면
+    //북마크 바 닫힘 상태를 유지하고
+    BookmarkBar.style.display="none";
+    BookmarkOpen.style.display="none";
+    BookmarkClose.style.display="flex";
+} else {
+    //그렇지 않다면 열림 상태를 유지한다.
+    BookmarkBar.style.display="block";
+    BookmarkOpen.style.display="flex";
+    BookmarkClose.style.display="none";
+}
+
 const BookmarkBarToggle = () => {
     const isBookmarkBarOpen = localStorage.getItem("isBookmarkBarOpen")
     

@@ -80,8 +80,7 @@ body {
     right: 0;
     display: flex;
     justify-content: flex-end;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
+    color: black;
 }
 
 .Bookmark_close div {
@@ -99,5 +98,4 @@ body {
     min-height: calc(100vh - 70px);
     padding: 10px 30px;
     color: white;
-    background-color: rgba(0,0,0,0.5);
 }
