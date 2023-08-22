@@ -25,14 +25,18 @@ const addBookmarkItem = () => {
     if(localStorage.getItem("bookmarkList")){
         BookmarkList = JSON.parse(localStorage.getItem("BookmarkList"));
     }
-    let Name = document.getElementById("New_Bookmark_name_input").value;
-    let Url = document.getElementById("New_Bookmark_url_input").value;
+    let name = document.getElementById("New_Bookmark_name_input").value;
+    let url = document.getElementById("New_Bookmark_url_input").value;
     let createAt = Date.now();
     BookmarkList.push({
         name: name, 
         url: url, 
         createAt: createAt
     });
+    //변수 명과 객체로 저장할 Property의 value 값이 불일치해서 발생한 문제
+    //변수 명과 객체의 각 Property value 값을 일치하도록 수정하니 문제가 해결됨
+    //강의에서 나온 소스코드를 무지성으로 따라 치기만 해서 발생한 문제
+    
     //BookmarkList 배열에 객체의 형태로 저장
     localStorage.setItem("BookmarkList", JSON.stringify(BookmarkList));
     //우리가 입력한 북마크 이름과 url을
