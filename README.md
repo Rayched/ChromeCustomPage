@@ -1,5 +1,5 @@
 # ChromeCustomPage
-<b><a href="https://inf.run/eUPT" target="_blank">인프런 - 웹 프론트엔드를 위한 자바스크립트 첫 걸음</a></b> 강의에서 진행한 프로젝트의 Git Repository 입니다.
+<b><a href="https://inf.run/eUPT">인프런 - 웹 프론트엔드를 위한 자바스크립트 첫 걸음</a></b> 강의에서 진행한 프로젝트의 Git Repository 입니다.
 
 <br/><br/>
 
