@@ -34,9 +34,35 @@
     </div>
 
     <!-- 북마크 바 -->
-    <div class="Bookmark_bar" id="Bookmark_bar"></div>
+    <div class="Bookmark_bar" id="Bookmark_bar">
+        <!-- 북마크 CRUD 기능 추가 -->
+        <!-- 북마크 추가 -->
+        <!-- 북마크 추가 버튼-->
+        <div class="Bookmark_item_add_btn" id="Bookmark_item_add_btn">
+            북마크 추가
+        </div>
+        <!-- 북마크 추가 input form -->
+        <div class="Bookmark_item_input_form" id="Bookmark_item_input_form">
+            <div class="Bookmark_input">
+                <div class="New_Bookmark_name">
+                    <div class="label">이름</div>
+                    <input id="New_Bookmark_name_input"/>
+                </div>
+                <div class="New_Bookmark_url">
+                    <div class="label">url</div>
+                    <input id="New_Bookmark_url_input"/>
+                </div>
+            </div>
+
+            <div class="Bookmark_item_input_btn">
+                <div class="add_btn" id="add_btn">추가</div>
+                <div class="cancel_btn" id="cancel_btn">취소</div>
+            </div>
+        </div>
+    </div>
     <script src="JSCode/clock.js"></script>
     <script src="JSCode/search.js"></script>
     <script src="JSCode/Bookmark_Toggle.js"></script>
+    <script src="JSCode/bookmark.js"></script>
 </body>
 </html>
