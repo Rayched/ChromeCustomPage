@@ -43,6 +43,13 @@
         </div>
         <!-- 북마크 추가 input form -->
         <div class="Bookmark_item_input_form" id="Bookmark_item_input_form">
+            <!-- 
+                북마크 추가 버튼을 눌렀을 때
+                북마크 이름과 url을 입력할 form이 나오지 않은 문제가 있었다.
+                bookmark.js file에서 참조할 "Bookmark_item_input_form"이라는
+                id가 존재하지 않아서 발생했던 문제
+                id 값을 추가하니 정상적으로 동작하는 것을 확인하였음.
+            -->
             <div class="Bookmark_input">
                 <div class="New_Bookmark_name">
                     <div class="label">이름</div>
