@@ -46,9 +46,31 @@ const addBookmarkItem = () => {
     document.getElementById("New_Bookmark_name_input").value="";
     document.getElementById("New_Bookmark_url_input").value="";
 
+    setBookmarkItem({ 
+        name: name,
+        url: url,
+        createAt: createAt
+    });
+
     newBookmarkToggle();
+}
+
+//localstorage에 저장된 북마크 정보를 북마크 바에 표시하는 logic
+const newBookmarkItemList = document.getElementById("Bookmark_list");
+//id 값이 'Bookmark_list'인 요소를 가져온 뒤, newBookmarkItemList 변수에 저장
+
+const setBookmarkItem = (item) => {
+    console.log(item);
+}
+const setBookmarkList = () => {
+    //localstorage에 저장된 북마크 객체들을 가져와서
+    //북마크 바에 출력하는 기능을 하는 함수
+    BookmarkList.forEach((item) => {
+        setBookmarkItem(item);
+    });
 }
 
 document.getElementById("Bookmark_item_add_btn").addEventListener("click", newBookmarkToggle);
 document.getElementById("add_btn").addEventListener("click", addBookmarkItem);
 document.getElementById("cancel_btn").addEventListener("click", newBookmarkToggle);
+setBookmarkList();
