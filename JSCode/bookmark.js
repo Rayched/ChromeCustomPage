@@ -1,5 +1,10 @@
 //북마크 관련 기능
 
+/*
+ 지금까지 작성했던 코드 전부 삭제하고
+ 처음부터 다시 짜는 편이 정신건강에 좋을 것 같다.
+ 코드를 약간 건드렸더니 고칠게 산더미같이 불어버렸다.
+ 씨호박
 const newBookmarkForm = document.getElementById("Bookmark_item_input_form");
 
 //localstorage에 저장된 북마크 정보를 북마크 바에 표시하는 logic
@@ -116,3 +121,4 @@ setBookmarkList();
 document.getElementById("Bookmark_item_add_btn").addEventListener("click", newBookmarkToggle);
 document.getElementById("add_btn").addEventListener("click", addBookmarkItem);
 document.getElementById("cancel_btn").addEventListener("click", newBookmarkToggle);
+*/
